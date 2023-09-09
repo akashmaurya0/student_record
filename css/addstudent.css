@@ -1,0 +1,81 @@
+*
+{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: rgb(35, 34, 34);
+}
+table{  
+    
+     margin-top:5px;
+    border:.2px solid rgb(245, 239, 239);
+    border-radius: .3rem;
+    overflow: hidden;
+      box-shadow: 5px 5px 5px rgb(109, 109, 109);
+      opacity: 01;
+
+}
+td ,th{
+    height:40px;
+    width:200px;
+   background-image: linear-gradient(to right,rgb(255, 248, 253),rgb(248, 235, 237));
+    font-size:25px;
+   
+}
+.headbar
+{
+  margin:auto;
+   height:100px;
+   width:90%;
+   border:2px dotted red;
+  background-image: linear-gradient(rgb(151, 197, 243),rgb(63, 254, 206));
+   
+   border-bottom-left-radius: 35px;
+   border-bottom-right-radius: 35px;
+   box-shadow: 5px 5px 5px rgb(185, 185, 188);
+}
+input{
+    margin-left:10px;
+    padding-left:10px;
+    height:30px;
+    width:200px;
+}
+input[type="submit"]
+{
+    background-image: linear-gradient(rgb(250, 177, 177),rgb(247, 211, 143)); 
+    height:30px;
+    width:150px;
+    border-radius: 2px;
+  font-size:22px;
+}
+#table1
+{
+    width:60%;
+     margin-top:60px; 
+    margin-left:20%;
+}
+th{
+    text-align:left;
+    padding:3px;
+}
+@media (min-width:100px) and (max-width:700px)
+{
+ 
+    th{
+        text-align:left;
+        font-size: 20px;
+    }
+    #table
+    {
+        margin-right:100px;
+    }
+ 
+}
+@media (min-width:100px) and (max-width:500px)
+{
+    .headbar{
+        width:120%;
+        
+    }
+}

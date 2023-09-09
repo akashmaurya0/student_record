@@ -1,0 +1,105 @@
+body{
+    background-image: linear-gradient(to left,rgb(169, 243, 176),rgb(60, 154, 216));
+}
+.headbar
+{  position:absolute;
+    height:200px;
+    width:80%;
+      margin-top:0px;
+    text-align: center;
+    margin-left:10%;
+    background-image: linear-gradient(to left,#79b9c9,rgb(116, 255, 167));
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+    opacity: 1;
+
+}
+input{
+    font-size: 18px;    
+}
+td,th{
+    font-size:25px;
+}
+.t1
+{
+    position: absolute;
+    margin-top:22% ;
+    margin-left:10%;
+    height:60vh;
+    width:80%;
+    
+    
+   
+    border-radius:5px;
+}
+table{  
+    margin:auto;
+     margin-top:5px;
+    border:.5px solid rgb(245, 239, 239);
+    border-radius: .3rem;
+    overflow: hidden;
+      box-shadow: 5px 5px 5px rgb(109, 109, 109);
+      opacity: 01;
+
+}
+td ,th{
+    height:40px;
+    width:200px;
+   background-image: linear-gradient(to right,rgb(255, 248, 253),rgb(248, 235, 237));
+    
+}
+@media (min-width:300px) and (max-width:600px)
+{
+    table
+    {
+        margin-top:30%;
+    }
+    .t1{
+        margin-top:40%;
+        height:60vh;
+    }
+}
+.record
+{
+    position: absolute;
+    margin-top:600px;
+    height:400px;
+    width:80%;
+    margin-bottom:40px;
+    margin-left:10%;
+    border-radius:5px;
+    background-image: linear-gradient(to left,rgb(216, 249, 199),rgb(255, 214, 65));
+}
+@media (min-width:100px) and (max-width:400px)
+{
+    body,.t1 ,.record
+    {
+        background-image: linear-gradient(to left,rgb(202, 210, 255),rgb(202, 210, 255));
+
+    }
+    img
+    {
+       max-height:150;
+       max-width:100;
+    }
+      
+
+}
+.table_row
+{
+    border-bottom: 2px solid black;
+}
+@media (min-width:100px) and (max-width:400px)
+{ 
+    .record{
+        margin-left:4%;
+        margin-bottom: 100px;
+    }
+}
+@media (min-width:500px) and (max-width:599px)
+{
+    .t1{
+        margin-top: 40%;
+    }
+}
+

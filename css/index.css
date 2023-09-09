@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { height:100%;
+    width:100%;
+    font-family: Arial, sans-serif;
+    background-color: #292929;
+
+}
+.title
+{
+    display: flex;
+    justify-content:center;
+align-items:center;
+position:relative;
+text-align: center;
+
+margin-top: 0;
+
+background-color: rgb(12, 184, 169);
+    margin-top:0%;
+              height:100px;
+              width:100%;
+              color: #f1f1f1;
+              position: -webkit-sticky; /* Safari */
+              position: sticky;
+              top: 0;
+              border-bottom-left-radius: 20px;
+              border-bottom-right-radius: 20px;
+              box-shadow: 0xp 5px 50px 0px rgb(192, 187, 187);
+}
+
+.container {
+    width: 700px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    background-color: rgb(94, 95, 97);
+    padding: 10px;
+}
+
+.header h1 {
+    color: red;
+    font-size: 25px;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    left:0px;
+    height:150px;
+    width:150px;
+    font-size:20px;
+    background-color: rgb(12, 184, 169);
+ 
+    margin-top:1%;
+    text-align: left;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0px 4px 4px 0px rgb(185, 185, 185);
+}
+
+ ul {
+    list-style: none;
+    float: right;
+    margin-left: 10px;
+   
+}
+
+.menu li {
+    
+    line-height: 30px;
+  
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fffefe;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.table-container {
+    margin-top: 30px;
+}
+
+table{
+    width: 100%;
+    background-color: #f1f1f1;
+    border-collapse: collapse;
+    box-shadow: 0px 10px 10px 0px rgb(172, 172, 172) ;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    color:rgb(0, 0, 0);
+}
+table th
+{
+    line-height: 30px;
+}
+
+table td:first-child {
+    text-align: left;
+    color:rgb(0, 0, 0);
+}
+
+table td:last-child {
+    text-align: center;
+    color:rgb(0, 0, 0);
+}
+
+select,
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 2px;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+input[type="submit"] {
+    background-image: linear-gradient(rgb(250, 177, 177), rgb(247, 211, 143));
+    height: 40px;
+    width: 180px;
+    border-radius: 2px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-image: linear-gradient(rgb(128, 255, 128), rgb(128, 255, 128));
+    font-weight: bold;
+}
+
+.record {
+    margin-top: 30px;
+}
+i{
+    margin:0 5px;
+}

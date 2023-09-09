@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registration Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .input-group {
+      margin-bottom: 20px;
+    }
+    
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #888;
+    }
+    
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border: none;
+      background-color: #4caf50;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    .error-message {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Registration</h2>
+    <form onsubmit="validateForm(event)">
+      <div class="input-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="input-group">
+        <label for="fatherName">Father's Name</label>
+        <input type="text" id="fatherName" required>
+      </div>
+      <div class="input-group">
+        <label for="motherName">Mother's Name</label>
+        <input type="text" id="motherName" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="input-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" required pattern="[0-9]{10}">
+      </div>
+      <div class="input-group">
+        <label for="pincode">Pin Code</label>
+        <input type="text" id="pincode" required pattern="[0-9]{6}">
+      </div>
+      <div class="input-group" min-width="600px">
+        <label for="address">Address</label>
+        <textarea id="address" rows="3"  required></textarea>
+      </div>
+      <div class="input-group">
+        <label for="gender">Gender</label>
+        <select id="gender" required>
+          <option value="">Select</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <button class="btn" type="submit">Register</button>
+    </form>
+    <div id="error-message" class="error-message"></div>
+  </div>
+
+  <script>
+    function validateForm(event) {
+      event.preventDefault();
+
+      var nameInput = document.getElementById("name");
+      var fatherNameInput = document.getElementById("fatherName");
+      var motherNameInput = document.getElementById("motherName");
+      var emailInput = document.getElementById("email");
+      var phoneInput = document.getElementById("phone");
+      var pincodeInput = document.getElementById("pincode");
+      var addressInput = document.getElementById("address");
+      var genderInput = document.getElementById("gender");
+      var errorMessage = document.getElementById("error-message");
+
+      var name = nameInput.value.trim();
+      var fatherName = fatherNameInput.value.trim();
+      var motherName = motherNameInput.value.trim();
+      var email = emailInput.value.trim();
+      var phone = phoneInput.value.trim();
+      var pincode = pincodeInput.value.trim();
+      var address = addressInput.value.trim();
+      var gender = genderInput.value;
+
+      var isValid = true;
+
+      if (name === "") {
+        nameInput.classList.add("error");
+        isValid = false;
+      } else {
+        nameInput.classList.remove("error");
+      }
+
+      if (fatherName === "") {
+        fatherNameInput.classList.add("error");
+        isValid = false;
+      } else {
+        fatherNameInput.classList.remove("error");
+      }
+
+      if (motherName === "") {
+        motherNameInput.classList.add("error");
+        isValid = false;
+      } else {
+        motherNameInput.classList.remove("error");
+      }
+
+      if (email === "") {
+        emailInput.classList.add("error");
+        isValid = false;
+      } else {
+        emailInput.classList.remove("error");
+      }
+
+      if (phone === "" || !/^[0-9]{10}$/.test(phone)) {
+        phoneInput.classList.add("error");
+        isValid = false;
+      } else {
+        phoneInput.classList.remove("error");
+      }
+
+      if (pincode === "" || !/^[0-9]{6}$/.test(pincode)) {
+        pincodeInput.classList.add("error");
+        isValid = false;
+      } else {
+        pincodeInput.classList.remove("error");
+      }
+
+      if (address === "") {
+        addressInput.classList.add("error");
+        isValid = false;
+      } else {
+        addressInput.classList.remove("error");
+      }
+
+      if (gender === "") {
+        genderInput.classList.add("error");
+        isValid = false;
+      } else {
+        genderInput.classList.remove("error");
+      }
+
+      if (isValid) {
+        // Submit the form or perform further actions
+        alert("Registration successful!");
+        // document.getElementById("registrationForm").submit();
+      } else {
+        errorMessage.innerText = "Please fill in all required fields correctly.";
+      }
+    }
+  </script>
+</body>
+</html>

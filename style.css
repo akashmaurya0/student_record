@@ -1,0 +1,127 @@
+
+*
+{
+    margin:0px;
+    padding:0px;
+}
+
+.navbar
+{   display:flex;
+    justify-content: left;
+    align-items: center;
+    top:0;
+    z-index: 10;
+    position:-webkit-sticky;
+    position:sticky;
+    height:60px;
+    width:100%;
+    background: cover;
+    background-color: rgb(158, 154, 154);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(161, 161, 161);
+    
+}
+
+#list
+{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background:cover;
+  
+}
+.item
+{   font-size: 25px;
+    margin:5px 20px;
+    
+}
+
+
+
+a{
+    text-decoration: none;
+    color:white;
+    
+}
+a:hover{
+    color:red;
+    font-size: 28px;
+    
+}
+.name
+{   display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height:200px;
+    width:100%;
+    background-color: rgb(18, 18, 19);  
+    opacity: .5;
+    color:darkblue;
+    font-size: 40px;
+    
+ 
+}
+.content
+{
+    height:400px;
+    margin:5% 5%;
+    width:300px;
+    padding: 40px;
+    
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(161, 161, 161);
+    overflow:hidden;
+    background:linear-gradient(-35deg,rgb(255, 254, 250),rgb(245, 240, 198),rgb(228, 233, 158));
+}
+.container
+{
+    display:flex;
+    flex-wrap: wrap;
+    
+}
+
+.for
+{   position:relative;
+    
+     display:flex;
+    justify-content: center;
+    align-items: center;
+ height: 100px;
+ width:100%;
+
+}
+#btn
+{
+    height:50px;
+    width:120px;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 5px 5px 5px rgb(161, 161, 161);
+   background-image: linear-gradient(to left,rgb(253, 176, 52),rgb(255, 185, 185));
+   font-size: 20px;
+}
+#btn:hover
+{
+    height:60px;
+    width:130px;
+    font-size: 28px;
+}
+img
+{
+    height:55px;
+    width:55px;
+    background: cover;
+    border-radius: 50%;
+    margin:0px 10px;
+    display:flex;
+    justify-content: left;
+}
+@media (min-width:100px) and (max-width:440px){
+    .item{
+        margin:8px;
+        font-size:20px;
+
+    }
+}

@@ -1,0 +1,82 @@
+body{
+    background-image: linear-gradient(to left,rgb(42, 43, 42),rgb(95, 97, 97));
+}
+.outer
+{
+    
+    height:380px;
+    width:450px;
+    margin:auto;
+    margin-top: 10%;
+    border:2px solid red;
+    background-image: linear-gradient(to left,rgb(200, 251, 251),rgb(255, 223, 223));
+    box-shadow: 5px 2px 10px white;
+    padding-top:30px;
+    border-radius: 5px;
+}
+input{
+    font-size: 25px;  
+   
+}
+td{
+    font-size:25px;
+}
+input[type="submit"]
+{
+    background-image: linear-gradient(rgb(250, 177, 177),rgb(247, 211, 143)); 
+    height:40px;
+    width:100px;
+    border-radius: 2px;
+
+}
+@media (min-width:100px) and (max-width:600px)
+{
+    .outer
+{
+    
+    height:280px;
+    width:350px;
+    margin:auto;
+    margin-top: 10%;
+    border:2px solid red;
+    background-image: linear-gradient(to left,rgb(194, 245, 253),rgb(208, 255, 143));
+    box-shadow: 5px 2px 10px gray;
+    padding-top:30px;
+    border-radius: 5px;
+}
+input{
+    font-size: 18px;    
+}
+td{
+    font-size:18px;
+}
+input[type="submit"]
+{
+    background-image: linear-gradient(rgb(250, 177, 177),rgb(247, 211, 143)); 
+    height:30px;
+    width:80px;
+    border-radius: 2px;
+
+}
+}
+@media (min-width:100px) and (max-width:400px)
+{
+   body
+   {
+
+   
+    background-image: linear-gradient(rgb(47, 47, 47),rgb(47, 47, 47));
+}
+.outer{
+  margin-top:200px;  
+}
+}
+@media (min-width:100px) and (max-width:600px)
+{
+.outer{
+  margin-top:200px;  
+}
+}
+
+
+

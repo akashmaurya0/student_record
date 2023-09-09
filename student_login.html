@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Awesome Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+    }
+    
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    
+    .input-group {
+      margin-bottom: 20px;
+    }
+    
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      color: #888;
+    }
+    
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    
+    .btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border: none;
+      background-color: #4caf50;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    .btn:hover {
+      background-color: #45a049;
+    }
+    
+    .error-message {
+      color: red;
+      margin-top: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <div class="input-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" required>
+    </div>
+    <div class="input-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" required>
+    </div>
+    <button class="btn" onclick="login()">Login</button>
+    <div id="error-message" class="error-message"></div>
+  </div>
+
+  <script>
+    function login() {
+      var usernameInput = document.getElementById("username");
+      var passwordInput = document.getElementById("password");
+      var errorMessage = document.getElementById("error-message");
+
+      var username = usernameInput.value.trim();
+      var password = passwordInput.value.trim();
+
+      if (username === "" || password === "") {
+        errorMessage.innerText = "Please enter both username and password";
+        return;
+      }
+
+      if (username === "admin" && password === "password") {
+        // Successful login
+        alert("Login successful!");
+        // Redirect to another page
+        // window.location.href = "dashboard.html";
+      } else {
+        // Display error message
+        errorMessage.innerText = "Invalid username or password";
+      }
+    }
+  </script>
+</body>
+</html>
